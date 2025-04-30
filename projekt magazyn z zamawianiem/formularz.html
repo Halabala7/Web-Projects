@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="kontener">
+        <nav>
+            <h1>Formularz</h1>
+        </nav>
+        <div id="kontnet" style="flex-direction: column;">
+            <div id="informacja_o_produkcie">
+            <h1>Wypełnij formularz</h1>
+            </div>
+            
+            
+        <form>
+     <div id="wybor_rodz">
+        <label><input type="radio" id="osoba_prywatna" name="firma_czy_prywatnie" onclick="zmiana_prywatna()" checked="checked"> osoba prywatna</label>
+        <label><input type="radio" id="firma" name="firma_czy_prywatnie" onclick="zmiana_firma()"> firma</label>
+        <div id="nipdiv">
+            <label for="nip">NIP:</label><br>
+            <input type="text" id="nip" name="nip" class="wartosc" maxlength="10"><br>
+            </div><br>
+    </div>
+    <div id="imie_nazwisko">       
+        <div id="imiediv">
+                <label for="imie">Imie:</label><br>
+                <input type="text" id="imie" name="imie" class="wartosc" required><br>
+            </div>
+            &nbsp;&nbsp;&nbsp;
+        <div id="nazwiskodiv">
+                <label for="nazwisko">Nazwisko:</label><br>
+                <input type="text" id="nazwisko" name="nazwisko" class="wartosc" required><br>
+            </div>
+        </div>
+            <label for="miasto">miasto:</label><br>
+            <input type="text" id="miasto" name="miasto" class="wartosc" required><br>
+            
+            <div id="kod_adres">
+            <div id="telefondiv">
+                <label for="kod_pocztowy">kod pocztowy:</label><br>
+                <input type="text" maxlength="6" id="kod_pocztowy" name="kod_pocztowy" class="wartosc" required><br>
+            </div>
+            <div id="adresdiv">
+                <label for="adres">adres:</label><br>
+                <input type="text" id="adres" name="adres" class="wartosc" required>
+            </div>
+        </div>
+        <br>
+            <input type="submit" onclick="potwierdzenie_zamowienia()" value="Zamow" class="przycisk">
+            
+             
+        
+        </form>
+    
+
+        </div>
+
+
+    <div id="stopka"><p>Autor: Dawid Halamoda</p></div>
+</div>
+
+    <script src="script.js"></script>
+    
+
+    
+</body>
+</html>

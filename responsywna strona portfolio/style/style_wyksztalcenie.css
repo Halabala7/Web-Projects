@@ -1,0 +1,301 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,300&display=swap');
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #262626;
+    width: 100vw;
+    height: 100vh;
+    
+}
+body{
+    overflow-x: hidden;
+}
+#container{
+    display: flex;
+    position: relative;
+    clear: both;
+    overflow:auto; 
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+#navbar{
+    
+    height: 100vh;
+    width: 70px;
+    left: 0;
+    top: 0;
+    float: left;
+    background-color: #0d0d0d;
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    
+}
+#logo_icon{
+    position: relative;
+    top:5%;
+}
+#middle_icon{
+    position: relative;
+    top: 30%;
+}
+#bottom_icon{
+    position: relative;
+    top: 40%;
+}
+#navbar li{
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+#navbar .fa-solid, #navbar .fa-brands{
+    color: #595959;
+    
+    font-size: 2.5em;
+    margin-top: 20%;
+    transition: 0.5s, transform 0.5s;
+}
+#navbar .fa-solid:hover, #navbar .fa-brands:hover, .navigation--responsive .fa-solid:hover, .navigation--responsive .fa-brands:hover{
+    color: #15eda3;
+}
+.navigation--responsive .fa-solid, .navigation--responsive .fa-brands{
+    color: #595959;
+    transition: 0.5s, transform 0.5s;
+    margin-top: 20%;
+    font-size: 5em;
+}
+
+
+label[for="toggle"] {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    color: #15eda3;
+    z-index: 6;
+    font-size: 3rem;
+    display: none;
+    
+}
+#toggle {
+    display: none;
+}
+svg.hamburger {
+    display: none;
+}
+.navigation--responsive {
+    display: none;
+}
+
+
+   
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #c8c8c8;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../pictures/tlo2.png);
+    background-repeat:no-repeat;
+    padding-top: 5%;
+}
+.fa-solid{
+    font-size: 5em;
+}
+#content h1{
+    font-size: 6em;
+}
+#wyksztalcenie{
+    margin-top: 5%;
+    display: flex;
+    width: 80%;
+    font-size: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#wyksztalcenie h1{
+    margin-top: 2%;
+    font-size: 1.5em;
+}
+#wyksztalcenie p{
+    margin-top: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+
+#stopka{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+	padding-top:25px;
+	padding-bottom: 25px;
+	width:100%;
+    font-size: 2em;
+	background-color:#1a1a1a;
+	color:#e6e6e6;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    #navbar{
+        width: 100%;
+        height: 60px;
+        float: none;
+        display: flex;
+        overflow-y: unset;
+    }
+    #logo_icon{
+        display: none;
+    }
+    #middle_icon{
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    #bottom_icon{
+        width: 20%;
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+    #middle_icon li{
+        margin-left: 5%;
+    }
+    #bottom_icon li{
+        margin-left: 20%;
+    }
+    #middle_icon, #bottom_icon{
+        top:0;
+    }
+    #navbar li{
+        list-style: none;
+        float: left;
+        margin-top: 0%;
+        
+    }
+   #navbar .fa-solid, #navbar .fa-brands{
+        color: #595959;
+        font-size: 4em;
+        
+        transition: 0.5s, transform 0.5s;
+    }
+    #content{
+        display: flex;
+        height: 90vh;
+    }
+   
+}
+
+@media only screen and (max-width: 750px){
+    #content{
+        padding-top: 20%;
+    }
+   
+    #navbar{
+        display: none;
+    }
+    #middle_icon, #bottom_icon{
+        display: none;
+    }
+    label[for="toggle"] {
+        display: block;
+    }
+    svg.hamburger {
+        display: block;
+    }
+
+    .navigation--responsive {
+        display: block;
+        background: #0d0d0d;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        top: -200%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        transition: top 1s;
+        z-index: 2;
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+    }
+ 
+    .navigation--responsive ul {
+        display: block;
+        list-style: none;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 85px 0 0 0;
+        padding: 0;
+    }
+
+    .navigation--responsive ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation--responsive li a {
+        padding: 0px 0px 0px 0px;
+        text-decoration:none;
+        color:black;
+        font-family:sans-serif;
+    }  
+  
+   #toggle:checked ~ .navigation--responsive {
+        top: 0vh;
+    } 
+    
+}
+@media only screen and (max-width: 500px){
+    #content h1{
+        font-size: 4em;
+    }
+    #wyksztalcenie h1{
+        font-size: 1.5em;
+    }
+    #wyksztalcenie p{
+        font-size: 1em;
+    }
+    #stopka{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-height: 750px){
+    
+    #navbar{
+        overflow-y: scroll;
+    }
+}

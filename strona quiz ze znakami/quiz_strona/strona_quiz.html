@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz ze znaków</title>
+  <meta name="description" content="Nauka znakow dla dzieci">
+  <meta name="author" content="Dawid Halamoda">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<body>
+<a id="top"></a>
+   <div id="nadnav"><img id="logo" src="../lib/logo-nobg.png"></div>
+      <nav>
+	  <div id="logonav"><a href="../index.html"><img src="../zdj/loga/logo-nobg.png" width= "100" height= "62"></a>
+            </div>
+            <ul>
+              <li><a href="../index.html">MENU</a></li>
+              <li><a href="#top">QUIZ</a></li>
+              <li><a href="../nauka_znakow/nauka_znakow.html">NAUKA</a></li>
+            </ul>
+          </nav>
+    <div class="panel" id="panel1">
+        <div class="result"></div>
+        
+        <!-- TUTAJ BYŁY STATYCZNE OBRAZKI - TERAZ TYLKO PUSTY KONTENER -->
+        <div class="question-container" id="question">
+            <!-- JavaScript będzie tu wstawiał obrazki dynamicznie -->
+        </div>
+        
+        <div class="option-container">
+            <button class="option" id="op1">option1</button>
+            <button class="option" id="op2">option2</button>
+            <button class="option" id="op3">option3</button>
+            <button class="option" id="op4">option4</button>
+        </div>
+        <div class="navigation">
+            <button class="evaluate" id="btn">Odpowiedz</button>
+            <p id="message"></p>
+            <button class="next" id="btn2">Nastepne pytanie ➤</button>
+            <button class="next" id="btn4">Koniec</button>
+        </div>
+    </div>
+	
+    <div class="endpanel" id="panel2">
+        <div class="endpanel2">
+            <p style="color: white;">liczba punktów:</p>
+            <p id="message2" style="margin-left: 5px; color: white;"></p>
+            <div><button class="reset" id="btn3">RESETUJ QUIZ</button></div>
+            <p id="endscore"></p>
+        </div>
+    </div>
+	
+    <div id="stopka"> 
+        <ul> 
+            <li>Dawid Halamoda</li>
+        </ul>
+    </div>
+  
+<script src="script.js"></script>
+</body>
+</html>

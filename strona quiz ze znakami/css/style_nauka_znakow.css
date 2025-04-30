@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+/* 
+importowanie czcionki
+ */
+html, body {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* 
+ustawienie strony w pozycji domyslnej dopasowanej do okna przegladarki
+ */
+body {
+
+	font-family: 'Exo', sans-serif;		/* zmiana czcionki */
+	overflow: auto;		/* pozwala na poprawne dzialanie strony po animacji */
+	scroll-behavior: smooth;	/* płynne przewijanie strony podczas klikania przyciskow nauka oraz autorzy */
+	background-image: url("../zdj/tlo/obserwacja_drogi.png");		/* dpdanie zdjecie tla */
+
+}
+
+
+
+#nadnav{
+
+	width:100%; /* szerokość  */
+	height: 100vh; /* wysokość */
+	background: #cc4533; /* kolor tła */
+	animation-delay: 1s; /* opóźnienie animacji */
+	animation-name: slide;/* nazwa animacji */
+	animation-duration: 2s; /* czas trwania animacji */
+	animation-fill-mode: forwards;/* obiekt animowany zostaje w ostatniej pozycji */
+}
+@keyframes slide{
+	0%{
+		height: 100vh; /* na poczatku animacji wysokość diva wynosi 100vh */
+		
+	}
+
+	100% {
+		height: 0vh ; /* na końcu animacji wysokość diva wynosi 0vh, czyli div "znika" */
+		
+	}
+}
+
+
+
+
+
+
+
+
+#logo{
+	
+	animation: slidelogo 1.5s;/* przypisanie animacji do obiektu */
+	height: 0;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	position: absolute;
+	margin:auto;
+	/* powyższe wartości pozwalają ustawić logo na samym środku strony */
+}
+@keyframes slidelogo{
+	0%{
+		height: 0%; 
+		opacity: 1;
+		/* na poczatku logo ma zerowy rozmiar */
+	}
+	
+	80%{
+		height: 30%;
+		opacity: 1;
+		/* później logo zmienia swoj rozmiar przez co pojawia sie na ekranie animacji */
+	}
+	90%{
+		height: 35%;/* logo lekko zwiększa swój rozmiar oraz zmienia przeźroczystość */
+		opacity: 0;
+	}
+	100%{
+		height: 35%;
+		opacity: 0;
+	}
+}
+
+
+
+
+
+
+
+#content{
+	box-shadow: 12px 0 15px -4px rgba(90, 90, 90, 1), -12px 0 8px -4px rgba(90, 90, 90, 1); /* cień z lewej i prawej strony głównego diva content */
+	margin: 0 auto; /* wyśrodkowanie diva */
+	width:60%; /* szerokość diva */
+	background: white; /* kolor tła diva */
+	bottom: 0; /* okreslenie pozycji dolnej diva aby stopka byla przyklejona do contentu */
+	padding-bottom: 100px; /* powiekszenie dołu contentu o 100px */
+	
+}
+
+
+
+.znak{
+	
+	margin-left:20px; /* margines lewy dla diva znak */
+	margin-right:20px; /* margines prawy dla diva znak */
+	margin-top: 100px; /* margines górny dla diva znak */
+	
+}
+.text{
+	
+	font-size: 1.2em;/* wielkość tekstu */
+	margin-right: 30px;/* margines prawy tekstu */
+	float:left;/* przesniecie tekstu do lewej strony */
+	margin-bottom: 20px;/* margines dolny tekstu */
+	
+}
+
+
+.image{
+	transition: transform .2s;/* płynna zmiana właściwości trwajaca 2 sekundy */
+	float:left; /* przesunięcie obrazka do lewej strony */
+	
+}
+
+
+.image:hover { 
+  transform: scale(1.1);/* zmiana skali zdjecia */
+}
+.srodkowanie_zdjecia{
+  display: inline-block;/* wyswietlenie diva jako blok liniowy */
+  margin-left: 25%;/* margines lewy */
+  transition: transform .2s;/* płynna zmiana właściwości trwajaca 2 sekundy */
+  animation: animacja_zdjec 5s;/* przypisanie animacji */
+}
+
+@keyframes animacja_zdjec {
+	0% {
+		
+		opacity: 0; /* przejrzystość ustwaniona na 0 */
+	}
+	100%{
+		opacity: 1; /* przejrzystość ustwaniona na 1, czyli zdjęcie pokazuje sie normalnie */
+	}
+}
+.srodkowanie_zdjecia:hover{
+	transform: scale(1.1) /* zmiana wielkości zdjęcia */
+}
+
+
+
+
+
+
+
+
+
+
+
+nav {
+	
+    display: flex;/* ustawienie opcji wyświetlania */
+    justify-content: space-between; /* przerwa pomiedzy logiem a przyciskami */
+    padding: 1rem 1rem; /* rozmiar */
+    background: #cfd8dc; /* kolor tła menu */
+	position: sticky; /* menu przyciskow jest "przyklejone" do góry strony */
+	top: 0;/* ustawienie menu przyciskow aby nie bylo zadnej przerwy z góry */
+	z-index: 1;/* menu przycisków jest wyżej w warości z aby zdjęcia nie przysłaniały ich */
+	animation: tlo 9s infinite linear;/* przypisanie animacji */
+  }
+  
+  nav ul {
+    display: flex; /* ustawienie wartości wyświetlania */
+    list-style: none;/* usuniecie domyślnego stylu wyglądu listy wyboru */
+	margin-right: 10px;/* margines prawy */
+	transition: all 0.3s ease-in-out 0.2s; /* animacja do napisu na przyciskach */
+  }
+  
+  nav li {
+	  
+    padding-left: 1rem; /* rozmiar */
+	margin-right:12px;/* margines prawy */
+	
+	transition: all 0.3s ease-in-out 0.2s; /* animacja do napisu na przyciskach */
+  }
+  nav a {
+    text-decoration: none; /* brak dekoracji tekstu */
+	font-size: 1.2em;/* wielkość czcionki */
+    color: black;/* kolor czcionki */
+	
+
+  }
+  
+  nav a:hover{
+		color: #FFCC00;/* kolor czcionki */
+	 font-size: 1.3em;/* wielkość czcionki */
+  transition: all 0.3s ease-in-out 0.1s; /* animacja do napisu na przyciskach */
+	
+	
+  }
+@keyframes powiekszenie_tekstu{
+	0%		{font-size: 1.2em;}/* wielkość czcionki */
+	100%	{font-size: 1.3em;}/* wielkość czcionki */
+}
+@keyframes tlo {
+	0%   { background: #cc4533; }/* kolor tła */
+	20%  { background: #ce3434; }/* kolor tła */
+	40%  { background: #cc4533; }/* kolor tła */
+	60%  { background: #ff4444; }/* kolor tła */
+	80%  { background: #cc3333; }/* kolor tła */
+	100% { background: #cc4533; }/* kolor tła */
+}
+
+
+#logonav{
+	animation: logo_powiekszenie_out 0.5s; 	
+	/* przypisanie animacji loga ktore pojawia sie z lewej strony menu */
+}
+#logonav:hover{
+	animation: logo_powiekszenie_in 0.5s;
+	/* przypisanie animacji loga ktore pojawia sie z lewej strony menu */
+	animation-fill-mode: forwards;
+	/* obiekt animowany zostaje w swojej koncowej pozycji */
+}
+@keyframes logo_powiekszenie_in{
+	0% {transform: scale(1.0);} /* na poczatku animacji logo jest swojej naturalnej wielkosci */
+	100% {transform: scale(1.1);}/* na koncu animacji logo sie powieksza */
+}
+@keyframes logo_powiekszenie_out{
+	0% {transform: scale(1.1);}/* na poczatku animacji logo sie powieksza */
+	100% {transform: scale(1.0);}/* na koncu animacji logo jest swojej naturalnej wielkosci */
+}
+
+
+
+
+
+#stopka{
+	
+	
+	background:#212327;/* kolor tła */
+	color: rgba(255,255,255,.75);/* kolor czcionki */
+	text-align:center;/* wyśrodkowanie tekstu */
+	font-size: 1.2em;/* wielkość czcionki */
+	top:0;/* div jest od razu wyświetlony pod poprzednim bez widocznej przerwy */
+	
+}
+#stopka ul{
+	list-style:none; /* usuniecie domyślnego stylu wyglądu listy wyboru */
+	display: inline-block;/* zmiana wartości wyświetlania na blok liniowy*/
+}
+#stopka li{
+	float:left; /* tekst zapisany w li jest ustawiony do lewej */
+	margin-left: 20px;/* margines lewy tekstu aby nie byly złączone ze sobą */
+	
+}
+
+/* ustawienie wyglądu paska przewijania */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 100px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+

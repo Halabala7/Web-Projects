@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #262626;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+#container{
+    display: flex;
+    width: 300px;
+    height: 500px;
+    background-color: #262626;
+    margin-top: 10%;
+    box-shadow: 0px 10px 100px 0px;
+    justify-content: center;
+}
+#calculator{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.wynik {
+    
+    width: 90%;
+    height: 15%;
+    margin-top: 10%;
+    background-color: black ;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+  
+}
+.wyswietlanie{
+   display: flex;
+   justify-content: flex-end;
+   margin: 5px;
+}
+.poprzednie-dzialanie {
+    
+    font-size: 30px;
+
+    color: rgba(255, 255, 255, .8);
+    
+    float: left;
+  }
+  .aktualne-dzialanie {
+    font-size: 30px;
+    color: rgba(255, 255, 255, .8);
+
+    
+    float: left; 
+  }
+#buttons{
+    display: grid;
+    width: 90%;
+   
+    background-color: black;
+    grid-template-columns: repeat(4, 60px);
+    gap: 2px;
+    align-content: center;
+    justify-content: center;
+}
+button{
+    width: 60px;
+    height: 60px;
+    background-color: #1a1a1a;
+    color: white;
+}
+button:hover{
+    background-color: gray;
+    border: none;
+    box-shadow: 0px 5px 10px 1px #666666
+}
+
+#lastrow{
+
+    width: 90%;
+    background-color: black;
+    padding-top: 2px;
+    gap: 2px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#lastrow  button.wider{
+    width: 90px;
+    height: 60px;
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html5>
+<html lang="pl">
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Grafika komputerowa</title> 
+	<meta name="description" content="Strona o nauce grafiki komputerowej"> 
+	<meta name="author" content="Dawid Halamoda"> 
+	<link rel="stylesheet" href="index.css?v=1.0"> 
+
+
+</head>
+<body>
+<div id="naglowek"> 
+<img src="zdjecia/logo.png" width="100%">
+</div>
+<div id="kontener">
+	<nav>
+		<ul>
+			<li><a href="#cyfrowy">Cyfrowy zapis obrazu</a></li>
+			<li><a href="#paleta_barw">Paleta barw</a></li>
+			<li><a href="#rodzaje_grafiki">Rodzaje grafiki komputerowej</a></li>
+			<li><a href="#programy_graficzne">Programy graficzne</a></li>
+			<li><a href="#grafika_na_www">Grafika na stronach WWW</a></li>
+			<li><a href="#autor">Autor</a></li>
+		</ul>
+		
+	</nav>
+<div id="obraz_pod_nav"><p style="margin: 0 auto;font-family:TangoSans;padding-top: 8%;margin-left: 15%; font-size: 3.5em;">Wszystko o grafice</p>
+<p style="margin-left: 30%; font-style:italic;font-size: 1.3em;">szybko, krótko i na temat</p></div>
+
+
+
+	<a id="cyfrowy"></a>
+	<div id="pole_1">
+		<h1 style="text-align:center;padding-top:3%;font-weight: 800;">Cyfrowy zapis obrazu</h1>
+		<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2%; border-radius:20px;">
+		<div class="zawartosc">
+	
+			<div id="obraz"><img src="zdjecia/urzadzenia.png" width="100%" height="100%"></div>
+
+		<div id="tekst">
+				<p>Obrazy widoczne na naszym komputerze tak jak inne dane są zapisywane jako kod binarny,
+				czyli za pomocą zer i jedynek. Obrazy cyfrowe to obrazy otrzymane np. poprzez przetworniki analogowo-cyfrowe znajdujące się w urządzeniach takich jak skanery , 
+				aparaty cyfrowe lub kamery, lub tworzony, bądź edytowany przez programy komputerowe z pomocą urządzeń peryferyjnych (myszka, tablet graficzny itp.)
+				,a także każde przechowywane na nośniku komputerowym. Należy zwrócić uwagę, że wizualizacja obrazu cyfrowego 
+				(np. jego wydruk lub wyświetlenie na ekranie) nie jest już obrazem cyfrowym, a analogowym. Do zapisania obrazu
+				na nośniku wykorzystuje się różne formaty plików graficznych. Często stosuje się kompresję danych, aby oszczędzić miejsca na nośniku.
+				</p>
+			</div>
+		</div>		
+			
+		
+	</div>
+	<a id="paleta_barw"></a>
+	<div id="pole-2">
+		
+			<h1 style="text-align: center; font-weight: 800; margin-bottom: 2%;">Palety barw</h1>
+			<div class="zawartosc" style="height: 150%;">
+
+				<hr style="background: white;margin: 0 auto;width: 80%; height: 1%; border-radius:20px; border: 1px solid #262626;">
+				
+				<div id="paleta_barw_tekst">
+					<div id="tekst_lewy">
+						<hr style="background: #ffffff;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+						<p>W informatyce paleta barw jest terminem związanym z matematycznymi 
+						możliwościami zawarcia informacji o kolorze w oprogramowaniu komputerowym. W początkowym okresie rozwoju możliwości graficznych komputerów było to zaledwie 
+						2, 4, 8, 16 lub 256 kolorów. Później stopniowo zwiększano możliwości sprzętu, aż do osiągnięcia wartości ok. 16,7 miliona kolorów określanej jako True color 
+						(dokładnie jest to liczba 224, czyli 16.777.216 kolorów). Liczba ta jest wystarczająca ze względu na ograniczone możliwości percepcji oka ludzkiego, stąd w 
+						zasadzie zaspokaja potrzeby urządzeń końcowych (np. wyświetlających lub drukujących). Jednak dla potrzeb przetwarzania danych może być niewystarczająca i wtenczas 
+						stosuje się jeszcze szersze palety barw, np. w skanerach czy oprogramowaniu do przetwarzania grafiki – wtedy nie mówi się już o palecie barw, ale o trybie pracy z kolorem,
+						podając odpowiednie wartości liczbowe będące potęgą dwójki (np. tryb 48-bitowy). </p>
+
+						<hr style="background: #ffffff;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+					</div>
+					<div id="tekst_prawy">
+						<hr style="background: #ffffff;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+					 <p>Do opisu kolorów używanych w grafice cyfrowej służąmodele barw. Każdy model barw ma własną przestrzeń kolorów, a co za tym idzie- własny zakres kolorów możliwych 
+						uzyskania oraz własny sposób ich tworzenia i identyfikowania</p></p>
+						<h3>Wyróżnia się następujące modele barw:</h3>
+						<ul>
+							<li>RGB i HSB wykorzystywane w urządzeniach wyświetlających np. monitorach</li>
+							<li>CMY i CMYK – wykorzystywane w urządzeniach drukujących</li>
+							<li>CIE La*b* model niezależny od urządzenia</li>
+						</ul>
+						<hr style="background: #ffffff;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+					</div>
+				</div>
+
+
+			<div id="obraz_palety_barw"><img src="zdjecia/palety_barw.png"><p id="tekst_obraz_palety_barw">RGB i CMYK</p></div>
+			<div id="modele_opis">
+				<div class="modele_tekst" style="margin-left:0%;">
+						<h3>RGB</h3>
+						<p>Model RGB wynika z właściwości ludzkiego
+							oka, w którym wrażenie widzenia dowolnej
+							barwy można wywoład przez wymieszanie
+							w ustalonych proporcjach trzech wiązek
+							światła:
+							czerwonej, zielonej i niebieskiej
+							Red, Green, Blue Zapis koloru jako RGB często stosuje się w
+							informatyce (np. palety barw w plikach
+							graficznych, w plikach html).
+							Najczęściej stosowany jest 24-bitowy zapis
+							kolorów (po 8 bitów na każdą z barw
+							składowych), w którym każda z barw jest
+							zapisana przy pomocy składowych, które
+							przyjmują wartośd z zakresu 0-255.
+							W modelu RGB wartośd 0 wszystkich
+							składowych daje kolor czarny, natomiast 255 -
+							kolor biały. </p>
+				</div>
+				<div class="modele_tekst">
+						<h3>HSB</h3><p>(HSL lub HSV)</p>
+						<p>Podstawą modelu HSB jest sposób
+							postrzegania kolorów przez człowieka.
+							Barwę w modelu HSB opisują trzy atrybuty: H (Hue) – kolor, inaczej barwa, odcieo lub ton,
+							np. czerwony, zielony, niebieski – obejmuje
+							wszystkie kolory tęczy:
+							od czerwonego do fioletowego i jest wyrażany
+							w stopniach od 0 do 360
+							S (Saturation) – nasycenie- oznacza siłe koloru,
+							czyli stosunek szarości do czystego odcienia;
+							mówiąc inaczej, określa stopieo nasycenia
+							(czystośd) barwy od 0% (szary) do 100%
+							(czysty kolor, pełne nasycenie)
+							B (Brightness) – jasnośd- określa poziom
+							jasności (jaskrawości) barwy; czy barwa jest
+							bliższa bieli czy czerni;
+							inaczej- określa udział bieli w danym kolorze
+							od 0% (czarny) do 100% (biały)</p>
+				</div>
+				<div class="modele_tekst">
+					<h3>CMY i CMYK</h3>
+					<p>CMY I CMYK sa powszechnie wykorzystywane w
+						urządzeniach drukujących za pomącą farb,
+						tonerów, atramentów w drukarkach,
+						kserokopiarkach i innych specjalistycznych
+						maszynach drukujących wykorzystywanych w
+						przemyśle poligraficznym Model CMY składa się z trzech barw
+						podstawowych:
+						cyjan (C) turkusowy
+						magneta (M) purpurowy
+						yellow (Y) żółty
+						na ich podstawie są tworzone inne barwy Modele CMY i CMYK są przeciwstawne do
+						modelu RGB, gdyż kolory uzyskuje się w
+						procesie mieszania subtraktywnego,
+						a więc odejmowania składowych koloru w
+						celu wytworzenia czerni, a nie dodawania
+						składowych koloru w celu wytworzenia bieli
+						jak w przypadku RGB  Model CMYK, oprócz barw CMY, zawiera
+						barwę black- czarną ,
+						teoretycznie z kolorów CMY można otrzymad
+						kolor czarny, ale w rzeczywistości otrzymujemy
+						odcieo brązu.
+						Użycie koloru czarnego poprawia więc
+						kontrast i jakośd wydruku</p>
+
+				</div>
+				<div class="modele_tekst">
+					<h3>CIE La*b*</h3>
+					<p> Jest modelem kolorów znacznie
+						różniącym się od RGB i CMYK, jest oparty na
+						postrzeganiu kolorów przez oko ludzkie
+						i opisuje wszystkie kolory dostrzegane przez
+						człowieka mającego normalną zdolnośd
+						widzenia W odróżnieniu od RGB i CMYK definiuje, jak
+						kolor wygląda a nie z jakich barw się składa
+						(ile i jakich barw potrzeba, aby uzyskad dany kolor ) Kanał L – (Luminacja) służy do określania
+						jasności i zawiera wartości w przedziale
+						od 0 – 100.
+						Wartośd 0 oznacza czero (brak jasności)
+						a wartośd 100 – biel (maksymalna jasnośd) kanał a służy do określenia stopnia nasycenia zieleni
+						i czerwieni
+						kanał b służy do określenia stopnia nasycenia kolorów
+						niebieskiego i żółtego. Chrominancja-składowa analogowego lub cyfrowego sygnału obrazu
+						kolorowego odpowiadająca za odcieo oraz nasycenie koloru. Model L a*b* pozwala na uzyskiwanie znacznie szerszej
+						palety kolorów w porównaniu z RGB i CMYK .
+						</p>
+				</div>
+
+			</div>
+		</div>
+		
+	</div>
+
+	<a id="rodzaje_grafiki"></a>
+	<div id="pole-3">
+		<h1 style="text-align: center; font-weight: 800;">Formaty plików graficznych</h1>
+	<div class="zawartosc">
+		
+			<p style=" margin-top: 3%; font-size: 1.2em;text-align:center; margin-left: 30%;margin-right: 30%;">Formaty plików graficznych można podzielić na formaty przechowujące grafikę rastrową oraz formaty przechowujące grafikę wektorową. 
+			Z kolei formaty przechowujące grafikę rastrową można podzielić na stosujące kompresję bezstratną, 
+			stosujące kompresję stratną oraz niestosujące kompresji.</p>
+			<div class="obrazy_formaty_plikow"><img src="zdjecia/formaty_plikow.png"></div>
+	</div>
+</div>		
+<div id="pole-4">	
+	
+	<div id="lewy">
+		<h2 style="font-weight: 800">Grafika rastrowa</h2>
+		<p class="tekst_rodzaje_grafiki">Grafika rastrowa, zwana również bitmapową, to typ grafiki, 
+			w której obraz jest prezentowany poprzez połączenie pojedynczych punktów (pikseli) 
+			na prostokątnej matrycy. Piksele są kolorowane na urządzeniu wyjściowym, a informacje 
+			są zapisywane w postaci systemów barwnych, takich jak RGB czy CMYK</p>
+			<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 1%; border-radius:20px; border-color: black;">
+
+			<h3 class="napis_przyklad_grafika">Przykład obrazu w grafice rastrowej:</h3>
+			<div><img src="zdjecia/grafika rastrowa.png"></div>
+
+			
+	
+			
+			
+			
+			<div id="div_zalety_i_wady">
+				<div class="menu_rozwijane">
+				<ul>
+					<li><a href="#opcja1">zalety</a></li>
+					<li><a href="#opcja2">wady</a></li>
+				</ul>
+				
+				</div>
+				
+				<div class="tekst_wady_i_zalety" id="opcja1"><a href="#kasowanie"><div class="zamkniecie_listy"></div></a>
+				<ul class="lista_zalet">
+					<li>Różnorodność kolorów.To znaczy, że jest dużo odcieni kolorów.</li>
+					<li>Głębia kolorów.Kolory na obrazie lub zdjęciu są takie same jak w rzeczywistości.</li>
+					<li>Intensywne kolory obrazu lub zdjęcia.</li>
+					<li>Możliwość rozjaśnienia obrazu lub zdjęcia</li>
+					<li>Możliwość poprawy obrazu lub zdjęcia.</li>
+				</ul>
+				
+			</div>
+				<div class="tekst_wady_i_zalety" id="opcja2"><a href="#kasowanie"><div class="zamkniecie_listy"></div></a>
+					<ul class="lista_wad">
+						<li>Duży rozmiar obrazów lub zdjęć. Trudno je przesłać mailem.</li>
+						<li>Obrazy lub zdjęcia zajmują dużo miejsca na dysku komputera</li>
+						<li>Nie można powiększyć zdjęcia.Przy dużych powiększeniach obraz traci ostrość. To znaczy robi się niewyraźny.</li>
+					
+					</ul>
+				</div>
+				<div style="display:none" id="kasowanie"></div>
+			</div>
+	</div>
+		
+	
+	
+	
+	
+	
+	
+	
+	<div id="prawy">
+		<h2 style="font-weight: 800">Grafika wektorowa</h2>
+		<p class="tekst_rodzaje_grafiki">Pod pojęciem tym kryje się rodzaj grafiki, który polega na zapisaniu obrazu 
+			w formie figur geometrycznych wypełnianych kolorami, będących rezultatem zastosowania 
+			odpowiednich wzorów matematycznych. Obiekty geometryczne, zwane też „prymitywami”,
+			 to krzywe, elipsy lub okręgi.</p>
+			 <hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 1%; border-radius:20px; border-color: black;">
+
+			 <h3 class="napis_przyklad_grafika">Przykład obrazu w grafice wektorowej:</h3>
+			 <div><img src="zdjecia/grafika wektorowa.png"></div>
+
+
+
+			
+
+			 <div id="div_zalety_i_wady">
+			 <div class="menu_rozwijane">
+				<ul>
+					<li><a href="#opcja3">zalety</a></li>
+					<li><a href="#opcja4">wady</a></li>
+				
+				
+				</ul>
+			</div>
+			<div class="tekst_wady_i_zalety" id="opcja3"><a href="#kasowanie"><div class="zamkniecie_listy"></div></a>
+				<ul class="lista_zalet">
+					<li>Swobodne skalowanie bez utraty jakości obrazu</li>
+					<li>Grafika wektorowa waży mniej niż rastrowa</li>
+				</ul>
+			</div>
+			<div class="tekst_wady_i_zalety" id="opcja4"><a href="#kasowanie"><div class="zamkniecie_listy"></div></a>
+				<ul class="lista_wad">
+					<li>Obraz nie jest szczegółowy</li>
+					<li>Nie ma swobodnego przejścia między koloram</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+
+	</div>
+	<a id="programy_graficzne"></a>
+
+	
+  
+
+<div id="pole-5">
+	<div id="programy_do_rastrowej">
+	
+		<h1 style="text-align:center;padding-top:5%;font-weight: 800;margin:0;">Programy graficzne do edycji grafiki rastrowej</h1>
+		<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2%; border-radius:20px;">
+	
+		<div id="gimp">
+			<div id="gimp_tekst">
+
+				<h2>Gimp</h2>
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+
+				<p>bezpłatny, otwartoźródłowy program do edycji grafiki rastrowej. Pozwala na operacje takie jak m.in. retusz, 
+					skalowanie, rysowanie, dodawanie tekstu, umożliwiając pracę na warstwach i kanałach, dostosowywanie interfejsu czy tworzenie 
+					skryptów automatyzujących niektóre czynności.</p>
+
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+			</div>
+			<div id="zdj_gimp"><img src="zdjecia/gimp.png" width="100%" height="70%"></div>
+
+		</div>
+		<div id="paint_shop_pro">
+			
+			<div id="zdj_paintshoppro"><img src="zdjecia/paintshoppro.png" width="100%" height="60%"></div>
+			<div id="paint_shop_pro_tekst">
+				
+				<h2 style="float: right;">Paint shop pro</h2>
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+				
+				<p>edytor grafiki bitmapowej i wektorowej dla komputerów z systemem operacyjnym Microsoft Windows. 
+				Stworzony przez firmę Jasc Software, stał się jednym z popularniejszych edytorów pod ten system. Obecnie producentem programu jest Corel, 
+				który przejął Jasc w październiku 2004.</p>
+			
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+
+			</div>
+
+		</div>
+		<div id="photoshop">
+			
+			
+			<div id="photoshop_tekst">
+				
+				<h2>Photoshop</h2>
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+				
+				<p>program graficzny przeznaczony do tworzenia i obróbki grafiki rastrowej, 
+					będący sztandarowym produktem firmy Adobe Systems. Program jest dostępny na platformy Windows i macOS. 
+					Projekty programu zapisywane są w dedykowanym formacie plików PSD.</p>
+			
+				<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+
+			</div>
+			<div id="zdj_photoshop"><img src="zdjecia/photoshoppng.png" width="70%" height="70%"></div>
+
+		</div>
+	
+	</div>
+	
+
+	
+	
+	
+	
+	<div id="programy_do_wektorowej">
+		<h1 style="text-align:center;padding-top:3%;font-weight: 800;">Programy graficzne do edycji grafiki wektorowej</h1>
+			<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2%; border-radius:20px;">
+
+			<div id="adobeill">
+				<div id="adobeill_tekst">
+	
+					<h2>Adobe Illustrator</h2>
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+	
+					<p>Adobe Illustrator jest jednym z dwóch najpopularniejszych programów do tworzenia i edycji grafiki wektorowej na świecie, obok CorelDRAW.
+						 Tworzone w nim ilustracje o rozszerzeniu AI można otworzyć we wszystkich programach od firmy Adobe do tworzenia i edycji grafiki, a także obróbki wideo, oraz animacji.</p>
+	
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+				</div>
+				<div id="zdj_adobeill"><img src="zdjecia/adobeill.png" width="50%" height="50%"></div>
+			</div>
+
+
+
+			<div id="CorelDRAW">
+			
+				<div id="zdj_CorelDRAW"><img src="zdjecia/coreldraw.png" width="60%" height="65%"></div>
+				<div id="CorelDRAW_tekst">
+					
+					<h2 style="float: right;">CorelDRAW</h2>
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+					
+					<p>Program CorelDRAW umożliwia umieszczanie obiektów wektorowych i map bitowych, na przykład zdjęć, wewnątrz innych obiektów lub kadrów. 
+						Dowiedz się, jak wykorzystać dowolny obiekt wektorowy lub tekst ozdobny jako kadr dla materiałów obrazkowych lub wektorowych.</p>
+				
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+	
+				</div>
+	
+			</div>
+
+			<div id="inkscape">
+				<div id="inkscape_tekst">
+	
+					<h2>Inkscape</h2>
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+	
+					<p>Inkscape – darmowy program do tworzenia grafiki wektorowej, stworzony w ramach projektu GNU. Pozwala na tworzenie przede wszystkim symboli, znaków towarowych i 
+						logotypów produktów/firm/stowarzyszeń oraz tworzenie ikon czy postaci komiksowych. 
+						Jest odpowiednikiem popularnego, płatnego programu CorelDRAW.</p>
+	
+					<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2px; border-radius:20px;">
+				</div>
+				<div id="zdj_inkscape"><img src="zdjecia/Inkscape.png" width="60%" height="60%"></div>
+			</div>
+
+			
+	</div>
+</div>
+<a id="grafika_na_www"></a>
+<div id="pole-6">
+	<h1 style="text-align:center;padding-top:5%;font-weight: 800;margin:0;">Grafika na stronach WWW</h1>
+		<hr style="background: #262626;color: black;margin: 0 auto;width: 80%; height: 2%; border-radius:20px;">
+		<div id="tresc">
+		<p>Aby wstawić zdjęcie na stronę WWW należy użyć tagu img. Jego składnia wygląda następująco: </p>
+		<div id="kod"><p style="padding: 2% 0%; margin-left: 2%;">img src="<span style="color: red">ścieżka/nazwa.rozszerzenie</span> alt=<span style="color: red"></span>"opis zdjecia"</span> width=<span style="color: red">"wysokość"</span> height=<span style="color: red">"szerokość"</span></p></div>
+		<h3>Atrybut src</h3>
+		<p>W wartości wymaganego atrybut src mamy obowiązek podać adres, pod którym znajduje się wymagane zdjęcie lub obraz.
+			 Ścieżka do zasobu może być podana względnie lub bezwzględnie.</p>
+		<h3>Atrybut alt</h3>
+		<p>Alt, czyli alternatywny tekst dla obrazka  informuje, co znajduje się na zdjęciu. Zdjęcie może zniknąć z serwera, wygasnąć w Twoim CMS-ie, 
+		może być oglądane nie przez człowieka, lecz przez crawlery wyszukiwarek lub osoba odwiedzająca Twoją stronę może być niewidoma i korzystać z czytników tekstu. 
+		W takim przypadku musisz pomóc rozpoznać tym osobą i systemom co jest na zdjęciu. </p>
+		<h3>Rozmiar obrazu</h3>
+		<p>możemy także zdefiniować atrybuty określające na sztywno rozmiar obrazu - width i height, czyli odpowiednio szerokość i wysokość</p>
+	</div>
+</div>
+</div>
+<a id="autor"></a>
+<div id="stopka"><p>Copyright © 2022 Dawid Halamoda</div> 
+</body>
+</html>
+
+

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #262626;
+    
+}
+#kontener{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: #FF5A5F;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+   
+}
+#kontnet{
+    display: flex;
+    width: 100%;
+    height: 90%;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+#logo{
+    display: flex;
+    width: 30%;
+    height: 10%;
+    justify-content: center;
+    align-items: center;
+}
+#tabela_div{
+    display: flex;
+    width: 70%;
+    height: 90%;
+    margin-right: 5%;
+}
+table.tabela {
+    margin-top: 5%;
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #949494;
+    border-style: solid;
+    color: #000000;
+    font-size: 20px;
+    
+  }
+  
+  table.tabela td, table.tabela th {
+    border-width: 2px;
+    border-color: #262626;
+    border-style: solid;
+    padding: 3px;
+  }
+  
+  table.tabela thead {
+    background-color: #00C49A;
+    font-size: 20px;
+   
+  }
+
+
+  table button {
+	
+	
+	background-color:transparent;
+	border-radius: 15px;
+	border: 4px solid #262626;
+	position: relative;
+    overflow: hidden;
+	cursor:pointer;
+	color:#262626;
+	font-family:sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	width: 10em;
+    height: 4em;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #262626;
+    z-index: 1;
+    transition: 1s;
+}
+table button:hover{
+    color:white;
+}
+table button:hover span {
+	transform: translateY(-40%) scale(4);
+	
+}
+
+button span{
+    position: absolute;
+    background-color: #262626;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    z-index: -1;
+    transition: 0.7s;
+    transform: translateY(100%);
+    left: 30%;
+    
+}
+#stopka{
+    display: flex;
+    width: 100%;
+    height: 3%;
+    font-size: 20px;
+    background-color: #3D3D3D;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+}
+.podana_ilosc{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    color: #000000;
+    transition: 0.5s;
+}
+.podana_ilosc:focus{
+   
+    border: 2px solid black;
+    background-color: #262626;
+    color: white;
+    transition: 0.5s;
+}
+.podana_ilosc::placeholder{
+    color: #000000;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+#informacja_o_produkcie, #zamowiona_ilosc{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    color: white;
+    font-size: 30px;
+}
+#zamowiona_ilosc{
+   flex-direction: row;
+    align-items: center;
+    
+}
+#zamowiona_ilosc p{
+    margin-left: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+
+}
+#wybor_rodz{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#kod_adres{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+#kod_pocztowy, #adres{
+    margin: 10px;
+}
+#nipdiv{
+   margin-top: 2%;
+    transition: all 2s;
+    opacity: 0;
+}
+@keyframes opacityanimin {
+    0%
+    {  
+        
+       opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+        
+    }
+}
+@keyframes opacityanimout {
+    0%
+    {
+        
+        opacity: 1;
+    }
+    100%
+    {
+        
+        opacity: 0;
+    }
+}
+#imie, #nazwisko, #miasto, #kod_pocztowy, #adres, #nip{
+    background-color: transparent;
+    border:  0px;
+    border-bottom: 5px solid #8c8c8c;
+   
+    color: #8c8c8c;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 25px;
+   text-align: center;
+}
+input#nip{
+    width: 200px;
+}
+#imie_nazwisko{
+    display: flex;
+    margin-top: 5%;
+    
+}
+#imiediv, #nazwiskodiv{
+    display: flex;
+    flex-direction: column;
+   
+    
+    
+}
+
+input:focus{
+    border-bottom: 5px solid #e6e6e6;
+    border-left: 3px solid #e6e6e6;
+    color: #e6e6e6;
+    border-bottom-left-radius: 20px;
+    outline: none;
+}
+#przycisk_zmiana_ilosci{
+    margin-bottom: 1%;;
+}
+input#imie, input#nazwisko{
+    width: 200px;
+}
+input#kod_pocztowy, input#adres{
+    width: 200px;
+
+}
+input#kod_pocztowy{
+    border-bottom: 5px solid #8c8c8c;
+    border-left: 3px solid #8c8c8c;
+    border-bottom-left-radius: 20px;
+}
+input#adres{
+    border-bottom: 5px solid #8c8c8c;
+    border-right: 3px solid #8c8c8c;
+    border-bottom-right-radius: 20px;
+}
+.przycisk{
+    
+    background-color: #8c8c8c;
+    color: #d9d9d9;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid #8c8c8c;
+}
+.przycisk:hover{
+    background-color: #808080;
+    color: #e6e6e6;
+    cursor: pointer;
+}
+.przycisk:focus{
+    padding: 1px;
+    border: none;
+}

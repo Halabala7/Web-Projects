@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700'); /* Importowanie czcionki z zewnętrznej strony */
+body { /* zmiana stylów do znaczniku <body> */
+	background-color: #ff3434; /* zmiana koloru tla strony na (#ff3434) - zapis heksadecymalny */
+	animation: tlo 9s infinite linear; /* odtworzenie animacji tlo przez 9s, wykonywanie nieskonczoczne, liniowe */
+	font-family: 'Exo', sans-serif; /* Ustawienie czcionki na stronie */
+}
+
+.kontener { /* zmiana stylów dla klasy kontener*/
+	animation: slide 2s forwards; /* odtworzenie animacji slide przez 2s */
+	animation-delay: 1s; /* czas przez ktory animacja czeka aby sie wykonala (1s) */
+	opacity: 0; /* widocznosc klasy konteneru na 0(oznacza ze jest nie widoczne) */
+	height: 70vh; /* usawienie wysokosci klasy kontener na 70vh(70% viewportu) */
+	margin: 10vh; /* usawienie marginesu klasy kontener na 10h(10% viewportu) */
+	display: flex; /* ustawienie opcji wyswietlania jako kontener flex */
+}
+
+div.wybor { /* zmiana stylów dla klasy wybor */
+	display: inline-block; /* ustawienie wyswietlania */
+	width: 50%; /* szerokosc przycisku */
+	text-align: center; /* wysrodkowanie tekstu */
+	font-size: 10vh; /* wielkosc czcionki */
+	color: #ffb833; /* kolor */
+	align-content: center; /* wysrodkowanie kontentu */
+	animation-name: animprzyciskrev; /* nazwa animacji */ 
+	animation-duration: 1s; /* czas animacji */
+}
+
+
+
+div.anim /* zmiana stylów dla klasy anim */
+{
+	position: fixed; /* pozycja */
+	align-content: center; /* wysrodkowanie kontentu */
+	text-align: center; /* wysrodkowanie tekstu */
+}
+
+div.anim:hover /* zmiana stylów dla klasy anim:hover */
+{
+	animation-name: animbtn; /* nazwa animacji */
+	animation-duration: 1s; /* czas animacji */
+}
+
+.ikonki { /* zmiana stylów dla klasy ikonki */
+	width: 200px; /* szerokosc */
+	height: 200px; /* wysokosc */
+}
+
+
+p.wybor2 { /* zmiana stylów dla klasy wybor2 */
+	bottom:50%; /* odleglosc od dolu strony */
+	align-content: center; /* wysrodkowanie kontentu */
+	text-align: center; /* wysrodkowanie tekstu */
+}
+div.wybor:hover /* zmiana stylów dla klasy wybor:hover */
+{
+	animation-name: animprzycisk; /* nazwa animacji */
+	animation-duration: 1s; /* czas animacji */
+	animation-fill-mode: forwards; /* rodzaj wypelnienia animacji */
+	cursor: grab; /* rodzaj kursora */
+}
+
+#logo { /* zmiana stylów dla klasy logo */
+	top:0; /* odleglosc od gory strony */
+	left:0; /* odleglosc od lewej krawedzi strony*/
+	right:0; /* odleglosc od prawej krawedzi strony */
+	bottom: 0; /* odleglosc od dolu strony */
+	position: absolute; /* pozycja */
+	margin:auto; /* wyrownanie */
+	height: 40vh; /* wysokosc */
+	width: 40vh; /* szerokosc */
+	animation-name: logoin; /* nazwa animacji */
+	animation-duration: 2s; /* czas animacji */
+	animation-fill-mode: forwards; /* rodzaj wypelnienia animacji */
+}
+
+#logo img { /* zmiana stylów dla zdjecia loga */
+	max-width:100%; /* maks szerokosc */
+	max-height:100%; /* maks wysokosc */
+}
+
+@keyframes logoin { /* animacja dla logoin  */
+	0% {transform: scale(0.1);} /* skalowanie animacji */
+	50% {transform: scale(1); opacity: 1;} /* skalowanie animacji */
+	100% {opacity: 0; transform:scale(1.2)} /* skalowanie animacji */
+	
+}
+@keyframes animprzycisk { /* animacja dla animprzycisk */
+	from  {background-color: #ffa500; color: #ff272711;} /* zmiana kolorow z #ffa500 (tlo); #ff272711*/
+	to {background-color: #ffb833; transform: scale(0.9); color: #ff3434;} /* zmiana kolorow na #ffb833 (tlo); #ff3434 i skali */
+  }
+
+@keyframes animprzyciskrev { /* animacja dla animprzyciskrev */
+	from {background-color: #ffb833; transform: scale(0.9); color: #ff3434;} /* zmiana kolorow z #ffb833 (tlo); #ff3434 i skali */
+	to {background-color: #ffa60000; transform: scale(1); color: #ffb833;} /*zmiana kolorow na #ffa60000 (tlo); #ffb833 i skali */
+  }
+
+@keyframes tlo {  /* animacja kolorow dla tlo */
+	0%   { background: #cc4533; } /* kolor na poczatku animacji */
+	20%  { background: #ce3434; }
+	40%  { background: #cc4533; }
+	60%  { background: #ff4444; }
+	80%  { background: #cc3333; }
+	100% { background: #cc4533; } /* kolor na koncu animacji */
+}
+
+@keyframes slide { /* animacja dla slide */
+	0% {
+		transform: translateX(-100%) scale(0.1); /* wielkosc obiektu animacji slide na poczatku */
+	}
+
+	100% {
+		transform: translateX(0) scale(1); /* wielkosc obiektu animacji slide na koncu */
+		opacity: 1; /* zmiana przezroczystosci obiektu na 1 */
+	}
+}
+
+@keyframes animbtn { /* animacja dla animbtn */
+	from{opacity: 0;} /* zmiana przezroczystosci obiektu z 0 */
+	to{opacity: 1;transform: scale(1.1);} /* zmiana przezroczystosci obiektu na 1 i skali */
+}

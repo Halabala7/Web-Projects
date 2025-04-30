@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Magazyn</title>
+</head>
+<body>
+    
+    <div id="kontener">
+        <nav>
+            <h1>Magazyn</h1>
+        </nav>
+        <div id="kontnet">
+        <div id="logo"><img src="logo.png"></div>
+       <div id="tabela_div">
+    
+        <table class="tabela">
+      <thead>
+        <tr>
+          <th>Nazwa produktu</th>
+          <th>Jednostka miary</th>
+          <th>Cena</th>
+          <th>Ilość</th>
+          <th>Aktualizuj ilość</th>
+          <th>Zamów</th>
+        </tr>
+      </thead>
+      <tbody>
+        <form onSubmit="document.getElementById('submit').disabled=true;">
+        <tr class="pole">
+          
+          <td class="nazwa_produktu">Kabel prądowy YKY / NYY-J 0,6/1kV 3x1,5</td>
+          <td class="jednostka_miary">Metry</td>
+          <td><span class="cena">3</span>zl</td>
+          <td class="ilosc">0</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max=""></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Skrętka U/UTP kat. 5e </td>
+          <td class="jednostka_miary">Metry</td>
+          <td><span class="cena">3.70</span>zl</td>
+          <td class="ilosc">10</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Kabel koncentryczny RG-11</td>
+          <td class="jednostka_miary">Metry</td>
+          <td><span class="cena">4</span>zl</td>
+          <td class="ilosc">20</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Rozgałęźnik wtyczkowy biały</td>
+          <td class="jednostka_miary">Sztuki</td>
+          <td><span class="cena">5.19</span>zl</td>
+          <td class="ilosc">30</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Lutownica typ lutola typ 6A-75W</td>
+          <td class="jednostka_miary">Sztuki</td>
+          <td><span class="cena">137</span>zl</td>
+          <td class="ilosc">40</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Opalarka 2000W</td>
+          <td class="jednostka_miary">Sztuki</td>
+          <td><span class="cena">70</span>zl</td>
+          <td class="ilosc">50</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Wkrętarka manualno elektryczna</td>
+          <td class="jednostka_miary">Sztuki</td>
+          <td><span class="cena">157</span>zl</td>
+          <td class="ilosc">60</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></button></td>
+        </tr>
+        <tr class="pole">
+          <td class="nazwa_produktu">Nóż krosowniczy do złącz idc lsa (typ krone)</td>
+          <td class="jednostka_miary">Sztuki</td>
+          <td><span class="cena">65</span>zl</td>
+          <td class="ilosc">70</td>
+          <td><button class="aktualizacja" >Aktualizacja<span></span></button></td>
+          <td><input type="number" class="podana_ilosc" placeholder="Podaj ilość" min="0" max="podany"></td>
+          
+        </tr>
+      </form>
+        <tr>
+          <td colspan="6"><button  onclick=zamow()>Zamów<span></span></button></td>
+        </tr>
+      
+      </tbody>
+      
+    </table>
+    
+  </div>
+  
+   
+</div>
+    <div id="stopka"><p>Autor: Dawid Halamoda</p></div>
+</div>
+
+    <script src="script.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='number'){e.preventDefault();return false;}}},true);
+      </script>
+ 
+</body>
+</html>

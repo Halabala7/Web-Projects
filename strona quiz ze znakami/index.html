@@ -1,0 +1,32 @@
+<!doctype html> <!-- ustawienie typu dokumentu jako html -->
+
+<html lang="en"> <!-- początek kodu html oraz ustawienie języka strony jako angielski -->
+<head> <!-- head zawiera metadaty strony-->
+  <meta charset="utf-8"> <!-- ustawienienie zestawu znaków obsługiwanych przez strone-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ustawienie viewportu strony (trudno mi to wytlumaczyc)-->
+
+  <title>Nauka znakow</title> <!-- ustawienie tytulu strony-->
+  <meta name="description" content="Nauka znakow dla dzieci"> <!-- ustawienie opisu strony-->
+  <meta name="author" content="Dawid Halamoda"> <!-- ustawienie autora strony -->
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0"> <!-- dodanie osobnego pliku z css(kaskadowe arkusze stylów) -->
+
+</head> <!-- koniec znacznika head -->
+
+<body> <!-- body zawiera zawaratość która wyświetlana jest na stronie -->
+  <div id="logo"><img src="lib/logo-nobg.png"></div> <!-- utworzenie <div> ("bloku") w którym znajduje się znacznik <img> zawierający logo strony -->
+  <div class="kontener"> <!-- utworzenie <div> z klasą kontener-->
+    <div class="wybor" onclick="location.href='quiz_strona/strona_quiz.html';">  <!-- utworzenie <div> który po naciśnięciu przemieści nas na stronę quiz.html -->
+      <div class="anim"></div> <!-- utworzenie <div> z klasą anim -->
+      <p class="wybor2">QUIZ</p> <!-- utworzenie paragrafu z klasą wybor2 oraz tekstem QUIZ -->
+      <img class="ikonki" src="lib/quiz.png"> <!-- utworzenie zdjęcia z ikoną do quizu oraz klasą ikonki-->
+    </div> <!-- koniec <div> -->
+    
+    <div class="wybor" onclick="location.href='nauka_znakow/nauka_znakow.html';"> <!-- utworzenie <div> który po naciśnięciu przemieści nas na stronę nauka_znakow.html -->
+      <div class="anim"></div> <!-- utworzenie <div> z klasą anim -->
+      <p class="wybor2">NAUKA</p> <!-- utworzenie paragrafu z klasą wybor2 oraz tekstem NAUKA -->
+      <img class="ikonki" src="lib/nauka.png"> <!-- utworzenie zdjęcia z ikoną do nauki oraz oklasą ikonki-->
+    </div> <!-- koniec <div> -->
+  </div> <!-- koniec <div> -->
+</body> <!-- koniec <body> -->
+</html> <!-- koniec <html> -->

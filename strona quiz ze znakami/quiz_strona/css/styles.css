@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+html, body{
+	  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body{
+	background-image: url("../photo/bg.png");
+	font-family: 'Poppins', sans-serif;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+
+nav {
+	
+    display: flex;/* ustawienie opcji wyświetlania */
+    justify-content: space-between; /* przerwa pomiedzy logiem a przyciskami */
+    padding: 1rem 1rem; /* rozmiar */
+    background: #cfd8dc; /* kolor tła menu */
+	position: sticky; /* menu przyciskow jest "przyklejone" do góry strony */
+	top: 0;/* ustawienie menu przyciskow aby nie bylo zadnej przerwy z góry */
+	z-index: 1;/* menu przycisków jest wyżej w warości z aby zdjęcia nie przysłaniały ich */
+	animation: tlo 9s infinite linear;/* przypisanie animacji */
+}
+  
+nav ul {
+    display: flex; /* ustawienie wartości wyświetlania */
+    list-style: none;/* usuniecie domyślnego stylu wyglądu listy wyboru */
+	margin-right: 10px;/* margines prawy */
+	transition: all 0.3s ease-in-out 0.2s; /* animacja do napisu na przyciskach */
+}
+  
+nav li { 
+    padding-left: 1rem; /* rozmiar */
+	margin-right:12px;/* margines prawy */
+	transition: all 0.3s ease-in-out 0.2s; /* animacja do napisu na przyciskach */
+}
+nav a {
+    text-decoration: none; /* brak dekoracji tekstu */
+	font-size: 1.2em;/* wielkość czcionki */
+    color: black;/* kolor czcionki */
+}
+  
+nav a:hover{
+  color: #FFCC00;/* kolor czcionki */
+  font-size: 1.3em;/* wielkość czcionki */
+  transition: all 0.3s ease-in-out 0.1s; /* animacja do napisu na przyciskach */
+}
+@keyframes powiekszenie_tekstu{
+	0%		{font-size: 1.2em;}/* wielkość czcionki */
+	100%	{font-size: 1.3em;}/* wielkość czcionki */
+}
+@keyframes tlo {
+	0%   { background: #cc4533; }/* kolor tła */
+	20%  { background: #ce3434; }/* kolor tła */
+	40%  { background: #cc4533; }/* kolor tła */
+	60%  { background: #ff4444; }/* kolor tła */
+	80%  { background: #cc3333; }/* kolor tła */
+	100% { background: #cc4533; }/* kolor tła */
+}
+
+
+#logonav{
+	animation: logo_powiekszenie_out 0.5s; 	
+	/* przypisanie animacji loga ktore pojawia sie z lewej strony menu */
+}
+#logonav:hover{
+	animation: logo_powiekszenie_in 0.5s;
+	/* przypisanie animacji loga ktore pojawia sie z lewej strony menu */
+	animation-fill-mode: forwards;
+	/* obiekt animowany zostaje w swojej koncowej pozycji */
+}
+@keyframes logo_powiekszenie_in{
+	0% {transform: scale(1.0);} /* na poczatku animacji logo jest swojej naturalnej wielkosci */
+	100% {transform: scale(1.1);}/* na koncu animacji logo sie powieksza */
+}
+@keyframes logo_powiekszenie_out{
+	0% {transform: scale(1.1);}/* na poczatku animacji logo sie powieksza */
+	100% {transform: scale(1.0);}/* na koncu animacji logo jest swojej naturalnej wielkosci */
+}
+
+
+#nadnav{
+
+	width:100%; /* szerokość  */
+	height: 100vh; /* wysokość */
+	background: #cc4533; /* kolor tła */
+	animation-delay: 1s; /* opóźnienie animacji */
+	animation-name: slide;/* nazwa animacji */
+	animation-duration: 2s; /* czas trwania animacji */
+	animation-fill-mode: forwards;/* obiekt animowany zostaje w ostatniej pozycji */
+}
+@keyframes slide{
+	0%{
+		height: 100vh; /* na poczatku animacji wysokość diva wynosi 100vh */
+		
+	}
+
+	100% {
+		height: 0vh ; /* na końcu animacji wysokość diva wynosi 0vh, czyli div "znika" */
+		
+	}
+}
+
+
+
+#logo{
+	
+	animation: slidelogo 1.5s;/* przypisanie animacji do obiektu */
+	height: 0;
+	top:0;
+	left:0;
+	right:0;
+	bottom: 0;
+	position: absolute;
+	margin:auto;
+	/* powyższe wartości pozwalają ustawić logo na samym środku strony */
+}
+@keyframes slidelogo{
+	0%{
+		height: 0%; 
+		opacity: 1;
+		/* na poczatku logo ma zerowy rozmiar */
+	}
+	
+	80%{
+		height: 30%;
+		opacity: 1;
+		/* później logo zmienia swoj rozmiar przez co pojawia sie na ekranie animacji */
+	}
+	90%{
+		height: 35%;/* logo lekko zwiększa swój rozmiar oraz zmienia przeźroczystość */
+		opacity: 0;
+	}
+	100%{
+		height: 35%;
+		opacity: 0;
+	}
+}
+
+
+
+
+
+.panel{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.question-container{
+	margin: 10px;
+	padding: 5px;
+	width: 80vw;
+	height: 10vh;
+	background-color: #cce6ff;
+	font-size: x-large;
+	text-align: center;
+	border-radius: 10px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.result{
+	margin: 10px;
+	padding: 5px;
+	width:80vw;
+	height: 10vh;
+	text-align: center;
+	font-size: 50px;
+	border-radius: 10px; 
+	
+}
+.option-container{
+	flex-direction: row;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+	width: 80%;
+	height: auto;
+	background-color: #b3d9ff;
+		
+}
+.option{	
+	
+	width: 35%;
+	height: 100px;
+	font-size: larger;
+	margin: 20px;
+	cursor: pointer;
+	box-sizing: border-box;
+	border-radius: 35px; 
+	color: white;
+}
+#op1{
+	background: #007acc;
+	border: 0px;
+	border-bottom: 7px solid #004d80;
+}
+#op1:hover{
+	background: #008ae6;
+	transition: 0.5s;
+}
+#op2{
+	background: #00cc99;
+	border: 0px;
+	border-bottom: 7px solid #009973;
+}
+#op2:hover{
+	background: #00e6ac;
+	transition: 0.5s;
+}
+#op3{
+	background: #ff4d4d;
+	border: 0px;
+	border-bottom: 7px solid #e60000;
+}
+#op3:hover{
+	background: #ff6666;
+	transition: 0.2s;
+}
+#op4{
+	background: #ffcc00;
+	border: 0px;
+	border-bottom: 7px solid #cca300;
+	
+}
+#op4:hover{
+	background: #ffd11a;
+	transition: 0.2s;
+
+}
+.option:hover{
+	background-color:  #ff3d3d;
+}
+
+.navigation{
+	width: 80%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	background-color:#cce6ff;
+}
+
+.evaluate,.next{
+	margin-top: 10px;
+	width:15vw;
+	border-radius: 35px; 
+	height: 8vh;
+	padding: 5px;
+	font-size: larger;
+}
+.evaluate{
+	
+	background-color: white;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.evaluate:hover{
+	
+	background-color:  #79ff4d;
+}
+.next{
+	color: white;
+	background-color: #333333;
+	cursor: pointer;
+}
+.next:hover{
+	background-color:#595959;
+}
+.endpanel{
+	width: 100%;
+	height: 70%;
+	position: relative;
+}
+.endpanel2{
+
+	text-align: center;
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	border-radius: 35px; 
+	width: 300px;
+	
+}
+.reset{
+	color: white;
+	width: 250px;
+	height: 100px;
+	font-size: larger;
+	margin: 20px;
+	background: rgba(255,100,100, 0.5);
+	cursor: pointer;
+	border: solid #ff3d3d;
+	box-sizing: border-box;
+	transition: all 0.3s;
+	border-radius: 50px; 
+}
+.reset:hover{
+	background-color:  #ff3d3d;
+}
+
+#stopka{
+	
+	height: 19.1%;
+	background:#212327;/* kolor tła */
+	color: rgba(255,255,255,.75);/* kolor czcionki */
+	text-align:center;/* wyśrodkowanie tekstu */
+	font-size: 1.2em;/* wielkość czcionki */
+	top:0;/* div jest od razu wyświetlony pod poprzednim bez widocznej przerwy */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#stopka ul{
+	list-style:none; /* usuniecie domyślnego stylu wyglądu listy wyboru */
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}

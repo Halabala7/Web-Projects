@@ -1,0 +1,547 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,300&display=swap');
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #262626;
+    width: 100vw;
+    height: 100vh;
+    
+}
+body{
+    overflow-x: hidden;
+}
+#container{
+    display: flex;
+    position: relative;
+    clear: both;
+    overflow:auto; 
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+#navbar{
+    
+    height: 100vh;
+    width: 70px;
+    left: 0;
+    top: 0;
+    float: left;
+    background-color: #0d0d0d;
+    text-align: center;
+    position: sticky;
+    z-index: 1;
+    
+}
+#logo_icon{
+    position: relative;
+    top:5%;
+}
+#middle_icon{
+    position: relative;
+    top: 30%;
+}
+#bottom_icon{
+    position: relative;
+    top: 40%;
+}
+#navbar li{
+    list-style: none;
+    justify-content: space-between;
+    margin-top: 20%;
+}
+#navbar .fa-solid, #navbar .fa-brands{
+    color: #595959;
+    
+    font-size: 2.5em;
+    margin-top: 20%;
+    transition: 0.5s, transform 0.5s;
+}
+#navbar .fa-solid:hover, #navbar .fa-brands:hover, .navigation--responsive .fa-solid:hover, .navigation--responsive .fa-brands:hover{
+    color: #15eda3;
+}
+.navigation--responsive .fa-solid, .navigation--responsive .fa-brands{
+    color: #595959;
+    transition: 0.5s, transform 0.5s;
+    margin-top: 20%;
+    font-size: 5em;
+}
+
+
+label[for="toggle"] {
+    position: fixed;
+    top: 15px;
+    left: 25px;
+    color: #15eda3;
+    z-index: 6;
+    font-size: 3rem;
+    display: none;
+    
+}
+#toggle {
+    display: none;
+}
+svg.hamburger {
+    display: none;
+}
+.navigation--responsive {
+    display: none;
+}
+
+
+   
+#content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #c8c8c8;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../pictures/tlo2.png);
+    background-repeat:no-repeat;
+    padding-top: 5%;
+}
+#przycisk_powrotu {
+    background-color: transparent;
+   color: #15eda3;
+    border: 3px solid #15eda3;
+    border-radius: 50px;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    position: fixed;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    right: 50px;
+    bottom: 50px;
+    font-size: 20px;
+}   
+#przycisk_powrotu span{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-color: #15eda3;
+    transform: translateY(150%);
+    transition: 0.7s;
+    z-index: -1;
+    border-radius: 25px;
+    left: 30%;
+}
+#przycisk_powrotu:hover {
+    color: black;
+    cursor:pointer;
+}
+
+#przycisk_powrotu:hover span {
+    transform: translateY(-40%) scale(3);
+}
+
+
+#tekst_naglowkowy{
+    text-align: center;
+    color: #c8c8c8;
+    font-size: 3em;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#lista_zainteresowan{
+    display: flex;
+    height: 10%;
+    justify-content: center;
+    position: sticky;
+}
+hr{
+    display: inline-block;
+    margin: 0 auto;
+    width: 30%;
+    height: 10px;
+    margin-top: 2%;
+    background-color: #c8c8c8;
+    border-radius: 50px;
+    border: none;
+}
+#lista_zainteresowan ul{
+    margin-top: 2%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    flex: 0 0 100%;
+    text-align: center;
+    justify-content: center;
+} 
+#lista_zainteresowan li{
+    
+    float: left;
+    align-content: space-around;
+    font-size: 2em;
+    margin-left: 70%;
+    border: none;
+    border-bottom: 5px dashed #c8c8c8;
+    border-radius: 10px;
+   
+}
+#lista_zainteresowan li:first-child{
+    margin-left: 0%;
+}
+#lista_zainteresowan .fa-solid{
+    color: #595959; 
+    font-size: 2.5em;
+    margin-top: 20%;
+    transition: 0.5s, transform 0.5s;
+}
+#lista_zainteresowan .fa-solid:hover{
+    color:#15eda3;
+}
+#motoryzacja{
+    
+    margin-top: 5%;
+    width: 90%;
+    color: #c8c8c8;
+    font-size: 1.8em;
+
+}
+#motoryzacja h1{
+    text-align: center;
+}
+#tekst_motoryzacja{
+    width: 40%;
+    height: 60%;
+   float: left;
+   padding-left: 10%;
+   margin-top: 10%;
+}
+#zdjecie_motoryzacja{
+    width: 60%;
+    height: 60%;
+    float: left;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#auto{
+    width: 100%;
+    height: 10%;
+    display: flex;
+}
+
+#auto .fa-solid{
+ color:#15eda3;
+ animation-name: animacja_auta;
+ animation-duration: 20s;
+ animation-iteration-count: infinite;
+ margin-left: 0%;
+ color: #15eda3; 
+ font-size: 2.5em;
+}
+@keyframes animacja_auta{
+    0%{margin-left: 0; transform: scaleX(1);}
+    45%{transform: scaleX(1);}
+    50% {margin-left: 90%;transform: scaleX(-1);}
+    95%{transform: scaleX(-1);}
+    100%{margin-left: 0;}
+}
+#kostka_rubika{
+    margin-top: 5%;
+    width: 90%;
+    color: #c8c8c8;
+    font-size: 1.8em;
+    
+}
+#kostka_rubika h1{
+    text-align: center;
+}
+#zdjecie_kostka_rubika{
+    margin-top: 10%;
+    width: 50%;
+    height: 90%;
+    float: left;
+    text-align: center;
+}
+#tekst_kostka_rubika{
+    margin-top: 10%;
+    width: 50%;
+    float: left;
+    padding-right: 10%;
+}
+#pilka_nozna{
+    margin-top: 5%;
+    width: 90%;
+    color: #c8c8c8;
+    font-size: 1.8em;
+}
+#pilka_nozna h1{
+    text-align: center;
+}
+#tekst_pilka_nozna{
+    margin-top: 10%;
+    padding-left: 10%;
+    width: 50%;
+    float: left;
+}
+#zdjecie_pilka_nozna{
+    width: 50%;
+    float: left;
+    text-align: center;
+    margin-top: 8%;
+}
+
+
+
+#muzyka{
+    margin-top: 5%;
+    width: 90%;
+    color: #c8c8c8;
+    font-size: 1.8em;
+    margin-bottom: 5%;
+    
+}
+#muzyka h1{
+    text-align: center;
+}
+#zdjecie_muzyka{
+    margin-top: 5%;
+    width: 50%;
+    height: 90%;
+    float: left;
+    text-align: center;
+}
+#tekst_muzyka{
+    margin-top: 10%;
+    width: 50%;
+    float: left;
+    padding-right: 10%;
+}
+
+
+
+
+#stopka{
+    display: flex;
+    justify-content: center;
+	padding-top:25px;
+	padding-bottom: 25px;
+	width:100%;
+    font-size: 2em;
+	background-color:#1a1a1a;
+	color:#e6e6e6;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1200px){
+    
+    #container{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+    #navbar{
+        width: 100%;
+        height: 60px;
+        float: none;
+        display: flex;
+        overflow-y: unset;
+    }
+    #logo_icon{
+        display: none;
+    }
+    #middle_icon{
+        width: 70%;
+        display: flex;
+        align-items: center;
+    }
+    #bottom_icon{
+        width: 20%;
+        display: flex;
+        float: right;
+        align-items: center;
+    }
+    #middle_icon li{
+        margin-left: 5%;
+    }
+    #bottom_icon li{
+        margin-left: 20%;
+    }
+    #middle_icon, #bottom_icon{
+        top:0;
+    }
+    #navbar li{
+        list-style: none;
+        float: left;
+        margin-top: 0%;
+        
+    }
+   #navbar .fa-solid, #navbar .fa-brands{
+        color: #595959;
+        font-size: 4em;
+        
+        transition: 0.5s, transform 0.5s;
+    }
+    #content{
+        display: flex;
+        height: 90vh;
+    }
+  
+}
+@media only screen and (max-width: 1000px){
+    #motoryzacja, #kostka_rubika, #pilka_nozna, #muzyka{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #tekst_motoryzacja{
+        padding-left: 10%;
+        padding-right: 10%;
+        width: 100%;
+    }
+    #zdjecie_motoryzacja{
+        width: 100%;
+    }
+    #zdjecie_kostka_rubika{
+        width: 100%;
+    }
+    #tekst_kostka_rubika{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #tekst_pilka_nozna{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #zdjecie_pilka_nozna{
+        width: 100%;
+    }
+    #zdjecie_muzyka{
+        width: 100%;
+    }
+    #tekst_muzyka{
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+}
+@media only screen and (max-width: 750px){
+    #content{
+        padding-top: 20%;
+    }
+    #tekst_naglowkowy{
+        font-size: 2em;
+    }
+
+
+    #navbar{
+        display: none;
+    }
+    #middle_icon, #bottom_icon{
+        display: none;
+    }
+    label[for="toggle"] {
+        display: block;
+    }
+    svg.hamburger {
+        display: block;
+    }
+
+    .navigation--responsive {
+        display: block;
+        background: #0d0d0d;
+        width: 200px;
+        height: 100%;
+        position: fixed;
+        text-align: center;
+        top: -200%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        transition: top 1s;
+        z-index: 2;
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+    }
+ 
+    .navigation--responsive ul {
+        display: block;
+        list-style: none;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 85px 0 0 0;
+        padding: 0;
+    }
+
+    .navigation--responsive ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation--responsive li a {
+        padding: 0px 0px 0px 0px;
+        text-decoration:none;
+        color:black;
+        font-family:sans-serif;
+    }  
+  
+   #toggle:checked ~ .navigation--responsive {
+        top: 0vh;
+    } 
+    #lista_zainteresowan li{
+        margin-left: 20%;
+    }
+}
+@media only screen and (max-width: 685px){
+    #motoryzacja img{
+        width: 100%;
+        height: 100%;
+    }
+    #kostka_rubika img{
+        width: 60%;
+    }
+    #pilka_nozna img{
+        width: 70%;
+    }
+    #muzyka img{
+        width: 70%;
+    }
+    #stopka{
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width: 430px){
+    #motoryzacja img{
+        width: 100%;
+        height: 90%;
+    }
+
+}
+@media only screen and (max-height: 750px){
+    
+    #navbar{
+        overflow-y: scroll;
+    }
+}
