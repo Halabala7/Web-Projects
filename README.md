@@ -1,30 +1,31 @@
-# 🌐 Projekty stron internetowych 
+# 🌐 Web Design & Frontend Projects
 
-## 📌 O projektach
+## Project Overview
 
-To repozytorium zawiera zbiór mniejszych projektów stron internetowych, które tworzyłem podczas nauki w technikum w ramach nauki front-endu i programowania webowego. 
-Każdy projekt był okazją do rozwijania umiejętności w zakresie **HTML**, **CSS**, **JavaScript** oraz poznawania dobrych praktyk tworzenia stron internetowych.
+This repository features a collection of smaller web development projects created during my time at Technical High School as part of my frontend and web programming coursework. 
+Each project served as a practical opportunity to build and refine my core skills in **HTML**, **CSS**, and **JavaScript**, while learning modern web development best practices.
 
-## 🛠️ Technologie
+---
 
-- **HTML5** – struktura i semantyka stron
-- **CSS3** – stylowanie, układy, animacje, responsywność
-- **JavaScript (Vanilla JS)** – interaktywność, dynamiczne elementy, podstawy logiki
-- **Media queries** – responsywność na różnych urządzeniach
-- **Visual Studio Code** – główne środowisko do kodowania
+## Tech Stack & Tools
 
-## 📚 Czego się nauczyłem
+- **HTML5** – Page structure and semantic markup.
+- **CSS3** – Styling, layouts, custom animations, and responsive design.
+- **JavaScript (Vanilla JS)** – Interactivity, dynamic elements, and core programming logic.
+- **Media Queries** – Ensuring full responsiveness across various device screens.
 
-- Budowania poprawnej **struktury HTML** zgodnie z zasadami semantyki.
-- Stylowania za pomocą **CSS**, w tym projektowania estetycznych i przejrzystych interfejsów.
-- Tworzenia **responsywnych stron**, które dobrze wyglądają zarówno na komputerach, jak i urządzeniach mobilnych.
-- Dodawania **animacji** oraz efektów przejścia.
-- Programowania w **JavaScript** – od prostych funkcji po dynamiczne zachowania na stronie.
+---
 
+## Key Takeaways & Skills Earned
 
-## 🎯 Cel
+- Building clean, accessible **HTML structures** following modern semantic standards.
+- Advanced styling with **CSS** to design clean, aesthetic, and user-friendly interfaces.
+- Creating **fully responsive websites (RWD)** optimized for desktop, tablet, and mobile displays.
+- Implementing smooth **CSS animations** and transition effects.
+- Programming with **JavaScript** – ranging from basic functional scripts to dynamic DOM manipulation.
 
-Celem tych projektów było zdobycie praktyki i nauka podstawowych, a zarazem kluczowych kompetencji związanych z tworzeniem nowoczesnych stron internetowych. 
-Każdy projekt powstał jako część procesu nauki i stanowi krok w kierunku budowania większych, bardziej zaawansowanych aplikacji.
+---
 
+## Objectives & Purpose
 
+The goal of these projects was to gain hands-on experience and master the foundational, yet critical, competencies required to build modern web interfaces. Each project reflects a milestone in my learning process, bridging the gap between basic styling and building advanced, highly interactive web applications.
